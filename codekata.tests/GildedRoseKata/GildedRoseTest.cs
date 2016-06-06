@@ -1,26 +1,22 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿// <copyright file="GildedRoseTest.cs" company="Microsoft">Copyright (c) Microsoft. All rights reserved.</copyright>
+using System;
 using System.Collections.Generic;
-using codekata.GildedRoseKata;
-using System.Text;
-using System.IO;
-using ApprovalTests;
-using ApprovalTests.Reporters;
 
 namespace codekata.tests
 {
+    using System.IO;
+    using System.Text;
+
+    using ApprovalTests;
+    using ApprovalTests.Reporters;
+
+    using codekata.GildedRoseKata;
+
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     [TestClass]
     public class GildedRoseTest
     {
-        [TestMethod]
-        public void foo()
-        {
-            IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
-            GildedRose app = new GildedRose(Items);
-            app.UpdateQuality();
-            Assert.AreEqual("foo", Items[0].Name);
-        }
-
         [UseReporter(typeof(DiffReporter))]
         [TestMethod]
         public void ThirtyDays()

@@ -57,12 +57,20 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GildedRoseKata\BaseStrategyTest.cs" />
     <Compile Include="GildedRoseKata\GildedRoseTest.cs" />
+    <Compile Include="GildedRoseKata\BackStagePassUpdateQualityStrategyTest.cs" />
+    <Compile Include="GildedRoseKata\LegendaryUpdateQualityStrategyTest.cs" />
+    <Compile Include="GildedRoseKata\BetterWithTimeUpdateQualityStrategyTest.cs" />
+    <Compile Include="GildedRoseKata\DefaultUpdateQualityStrategyTest.cs" />
+    <Compile Include="GildedRoseKata\ConjuredItemUpdateQualityStrategyTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

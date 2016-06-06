@@ -43,7 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GildedRoseKata\BackStagePassUpdateQualityStrategy.cs" />
+    <Compile Include="GildedRoseKata\BetterWithTimeUpdateQualityStrategy.cs" />
+    <Compile Include="GildedRoseKata\ConjuredItemUpdateQualityStrategy.cs" />
+    <Compile Include="GildedRoseKata\DefaultUpdateQualityStrategy.cs" />
     <Compile Include="GildedRoseKata\GildedRose.cs" />
+    <Compile Include="GildedRoseKata\Item.cs" />
+    <Compile Include="GildedRoseKata\IUpdateQualityStrategy.cs" />
+    <Compile Include="GildedRoseKata\LegendaryUpdateQualityStrategy.cs" />
+    <Compile Include="GildedRoseKata\StoreItem.cs" />
     <Compile Include="GildedRoseKata\TestTextFixture.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
