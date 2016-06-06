@@ -21,6 +21,7 @@ namespace codekata.GildedRoseKata
         public StoreItem(Item item)
         {
             this.item = item;
+            // TODO: Move the logic below to a factory class
             if (item.Name == "Aged Brie")
             {
                 this.updateQualityStrategy = new BetterWithTimeUpdateQualityStrategy();
@@ -54,6 +55,7 @@ namespace codekata.GildedRoseKata
             get { return this.item.Quality; }
             set
             {
+                // TODO: Methods for IncrementQuality and DecrementQuality
                 if (value >= 0 && value <= MAXQUALITY)
                 {
                     this.item.Quality = value;
