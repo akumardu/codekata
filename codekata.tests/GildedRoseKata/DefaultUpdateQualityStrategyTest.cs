@@ -18,9 +18,13 @@ namespace codekata.tests.GildedRoseKata
         [TestMethod]
         public void NotReduceQualityBelowZero()
         {
+            // Arrange
             var normalItem = GetNormalItem(quality: 0);
+
+            // Act
             this.iUpdateQualityStrategy.UpdateQuality(normalItem);
 
+            // Assert
             Assert.AreEqual(0, normalItem.Quality);
         }
 

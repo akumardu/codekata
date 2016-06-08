@@ -53,6 +53,7 @@
     <Compile Include="GildedRoseKata\LegendaryUpdateQualityStrategy.cs" />
     <Compile Include="GildedRoseKata\StoreItem.cs" />
     <Compile Include="GildedRoseKata\TestTextFixture.cs" />
+    <Compile Include="GildedRoseKata\UpdateQualityStrategyFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
