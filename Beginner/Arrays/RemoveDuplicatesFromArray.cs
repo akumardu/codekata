@@ -10,22 +10,24 @@ namespace Beginner.Arrays
     {
         public static int[] RemoveDuplicates(int []arr)
         {
-            int i = 0, j = 1, k = 1;
-            for (i = 0; i < arr.Length; i++)
+            int i = 0, j = 0, k = 0;
+            for (i = 0; i < arr.Length; )
             {
                 while (j < arr.Length && arr[i] == arr[j])
                 {
                     j++;
                 }
-                if(j == arr.Length)
-                {
-                    break;
-                }
-                int t = arr[j];
-                arr[j] = arr[k];
+                
+                int t = arr[i];
+                arr[i] = arr[k];
                 arr[k] = t;
                 i = j;
-                j++;
+                k++;
+            }
+
+            while(k < arr.Length)
+            {
+                arr[k] = 0;
                 k++;
             }
             return arr;
@@ -34,10 +36,12 @@ namespace Beginner.Arrays
         {
             Console.WriteLine("enter the size of array");
             int size= int.Parse(Console.ReadLine());
+            Console.WriteLine("enter array");
             int[] arr = new int[size];
             for (int i = 0; i < size; i++)
                 arr[i] = int.Parse(Console.ReadLine());
             RemoveDuplicates(arr);
+            Console.WriteLine("the resultant arry is");
             for (int i = 0; i < arr.Length; i++)
                 Console.WriteLine(arr[i]);
         }

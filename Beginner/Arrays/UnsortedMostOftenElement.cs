@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Beginner.Arrays
 {
-    class UnsortedMostOftenElement
+    class MostOftenElement
     {
-        public static int MostOftenElement(int[] arr)
+        public static int SortedMostOftenElement(int[] arr)
         {
             int count = 0, maxCount = 0, maxelement = arr[0];
             int j = 1;
@@ -29,10 +29,48 @@ namespace Beginner.Arrays
         }
         public static void TestMostOftenElement()
         {
-            int []arr = Utility.ReadArrayFromConsole();
-            Console.WriteLine("Most often array: " + MostOftenElement(arr));
+            int[] arr = Utility.ReadArrayFromConsole();
+            Console.WriteLine("Most often array: " + SortedMostOftenElement(arr));
         }
 
+        public static int UnsortedMostOften(int[] arr)
+        {
+            int maxcount = 0;
+            int maxelement = arr[0];
+           // int count = 0;
 
+            Dictionary<int, int> dict = new Dictionary<int, int>();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (!dict.ContainsKey(arr[i]))
+                {
+                    dict.Add(arr[i], 1);
+                }
+                else
+                {
+                    dict[arr[i]]++;
+                    // In case you want to do eager finding
+                    //count = dict[arr[i]];
+                    //if (count > maxcount)
+                    //{
+                    //    maxcount = count;
+                    //    maxelement = arr[i];
+                    //}
+                }
+            }
+
+            // iterate through the dictionary to find the largest occurring element
+            foreach(var kvp in dict)
+            {
+                if(maxcount < kvp.Value)
+                {
+                    maxcount = kvp.Value;
+                    maxelement = kvp.Key;
+                }
+            }
+
+            return maxelement;
+        }
     }
 }
+    

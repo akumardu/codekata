@@ -8,15 +8,16 @@ namespace Beginner.Arrays
 {
     class ArrayIntersection
     {
+        // when the size of the two arryas is almost equal use this method
         public static int[] Intersection(int[] m, int[] n)
         {
             int i = 0, j = 0;
-            List<int> result = new List<int>();
+            List<int> result = new List<int>(); // we are using a list here to store the commom elements in both arrays because we dont know how many are there
             while (i < m.Length && j < n.Length)
             {
                 if (m[i] == n[j])
                 {
-                    result.Add(m[i]);
+                    result.Add(m[i]); // adding common element in the list
                     i++;
                     j++;
                 }
@@ -25,7 +26,7 @@ namespace Beginner.Arrays
                 else
                     j++;
             }
-            return result.ToArray();
+            return result.ToArray(); // converting list to array
         }
         public static void TestIntersection()
         {
@@ -45,6 +46,7 @@ namespace Beginner.Arrays
             for (int i = 0; i < result.Length; i++)
                 Console.WriteLine(result[i]);
         }
+        // use binary search when size of one array is far greater than another
         public static bool BinarySearch(int[] arr, int x)
         {
             int low = 0;

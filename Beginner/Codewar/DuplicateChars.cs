@@ -21,7 +21,7 @@ namespace Beginner.Codewar
             for (int i = 0; i < str.Length; i++)
             {
                 char currentCharacter = char.ToUpper(str[i]);
-                charArray[(int)(currentCharacter)] = (charArray[(int)(currentCharacter)]) +1 ;
+                charArray[currentCharacter] = (charArray[currentCharacter]) +1 ;
             }
             for (int k = 0; k < 256; k++)
             {

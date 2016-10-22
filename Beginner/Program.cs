@@ -45,8 +45,8 @@ namespace Beginner
             //ReverseArray.TestReverseInAnotherArray();
             //ArrayIntersection.TestIntersection();
             // ArrayIntersection.TestIntersectionUsingBinarySearch();
-            //RemoveDuplicatesFromArray.TestRemoveDuplicates();
-            UnsortedMostOftenElement.TestMostOftenElement();
+            RemoveDuplicatesFromArray.TestRemoveDuplicates();
+          //UnsortedMostOftenElement.TestMostOftenElement();
         }
 
        
