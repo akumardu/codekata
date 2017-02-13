@@ -64,6 +64,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Codewars\BestTravelTest.cs" />
+    <Compile Include="Codewars\RecreationOneTest.cs" />
     <Compile Include="GildedRoseKata\BaseStrategyTest.cs" />
     <Compile Include="GildedRoseKata\GildedRoseTest.cs" />
     <Compile Include="GildedRoseKata\BackStagePassUpdateQualityStrategyTest.cs" />
@@ -82,6 +84,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
