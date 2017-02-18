@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace codekata.ArgsKata
 {
-    public class StringOption : IOption
+    public class StringOption : IOption<string>
     {
-        public T GetValue<T>()
+
+        public StringOption(string key)
         {
-            throw new NotImplementedException();
+            this.key = key;
         }
 
-        public void SetKey(string key)
+        public string key
         {
-            throw new NotImplementedException();
+            get; private set;
         }
 
-        public bool SetValue(string value)
+        public string GetValue(string parameter)
         {
             throw new NotImplementedException();
         }
