@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>codekata.tests</RootNamespace>
     <AssemblyName>codekata.tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,10 @@
       <HintPath>..\codekata\packages\ApprovalUtilities.3.0.11\lib\net45\ApprovalUtilities.Net45.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\codekata\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -64,6 +69,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Codewars\BestTravelTest.cs" />
+    <Compile Include="Codewars\RecreationOneTest.cs" />
+    <Compile Include="FluentMappingTests\BasicTests.cs" />
+    <Compile Include="FluentMappingTests\NullSourceTests.cs" />
+    <Compile Include="FluentMappingTests\SimplePropertyMappingTests.cs" />
+    <Compile Include="FluentMappingTests\Unit\SetterSpecTests.cs" />
+    <Compile Include="FluentMappingTests\Unit\TypeMappingSpecTests.cs" />
     <Compile Include="GildedRoseKata\BaseStrategyTest.cs" />
     <Compile Include="GildedRoseKata\GildedRoseTest.cs" />
     <Compile Include="GildedRoseKata\BackStagePassUpdateQualityStrategyTest.cs" />
@@ -71,6 +83,11 @@
     <Compile Include="GildedRoseKata\BetterWithTimeUpdateQualityStrategyTest.cs" />
     <Compile Include="GildedRoseKata\DefaultUpdateQualityStrategyTest.cs" />
     <Compile Include="GildedRoseKata\ConjuredItemUpdateQualityStrategyTest.cs" />
+    <Compile Include="NotifyTests\ArgumentValidationTests.cs" />
+    <Compile Include="NotifyTests\BasicTests.cs" />
+    <Compile Include="NotifyTests\ExclusiveTests.cs" />
+    <Compile Include="NotifyTests\Person.cs" />
+    <Compile Include="NotifyTests\PositiveNegativeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +99,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
