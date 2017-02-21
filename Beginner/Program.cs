@@ -45,30 +45,62 @@ namespace Beginner
             //ReverseArray.TestReverseInAnotherArray();
             //ArrayIntersection.TestIntersection();
             // ArrayIntersection.TestIntersectionUsingBinarySearch();
-            RemoveDuplicatesFromArray.TestRemoveDuplicates();
-          //UnsortedMostOftenElement.TestMostOftenElement();
+            // RemoveDuplicatesFromArray.TestRemoveDuplicates();
+            //UnsortedMostOftenElement.TestMostOftenElement();
+            // FindIndex.TestFindingIndex();
+            //BitQuestion1.testBit();
+            //BitQuestion2.testCountBits();
+            //SortBinaryArray.testSortBinary();
+            //FindMissingNumber.testMissingNumber();
+            //FindSmallestMissingNonNegativeNumber.testMissing();
+            // UniqueSubstrings.testSubstrings();
+            //CoverageForZeroes.testCoverage();
+            //ProfessorParty.testParty();
+            // SecondLargestElement.testArray();
+            // ImmediateSmallerElement.testImmediateSmaller();
+            //AverageAtEveryPoint.testAverage();
+            //NumberOfDivisors.testDivisors();
+            //FindSingleNumber.testNonRepeatingNumber();
+            //UglyNumbers.testFindingUglyNumber();
+            //AtLeastTwoGreaterElements.testGreaterElements();
+            //StringAndNumberIsequal.testISEqual();
+            //NumberAsXPowerY.testIsPower();
+            // CountNumberOfRepeatingDigits.testNumberOfDigits();
+            //EncryptString.testEncrypt();
+            // ChocolateDistribution.testMinimumDifference();
+            //WindowCount.testCount();
+            //HelpAThief.Help();
+            //RotateMatrixBy90Degree.testInplaceRotateMatrix();
+            //BooleanMatrix.testMatrixModified();
+            // RotateAnArrayByN.testRotate();
+            //EquilibriumInAnArray.testEquilibrium();
+            // KeypadTyping.testTyping();
+            // Fabonacci.testIsFabonacci();
+            //NthFabonacci.testFabonacciAtNth();
+            //FindFactors.testFactor();
+            // Factorial.testfact();
+            //ZeroesInBooleanMatrix.testCountZeroes();
+            //Overlappingrectangles.testISOverlap();
+            //SunligthOnBuildings.testSunlight();
+            NumberOfPaths.testPaths();
         }
 
-       
 
-       /* static void DisplayOrder<T>(T x, T y) where T : IComparable<T>
-        {
-            int result = x.CompareTo(y);
-            if (result == 0)
-                Console.WriteLine("{0,12}={1}", x, y);
-            if (result > 0)
-                Console.WriteLine("{0,12}>{1}", x, y);
-            if (result < 0)
-                Console.WriteLine("{0,12}<{1}", x, y);
 
-        }
-        */
-   
- 
-        
+        /* static void DisplayOrder<T>(T x, T y) where T : IComparable<T>
+         {
+             int result = x.CompareTo(y);
+             if (result == 0)
+                 Console.WriteLine("{0,12}={1}", x, y);
+             if (result > 0)
+                 Console.WriteLine("{0,12}>{1}", x, y);
+             if (result < 0)
+                 Console.WriteLine("{0,12}<{1}", x, y);
 
+         }
+         */
     }
-
 }
-   
+
+
 

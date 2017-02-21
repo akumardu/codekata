@@ -44,10 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\ArrayIntersection.cs" />
+    <Compile Include="Arrays\FindIndex.cs" />
     <Compile Include="Arrays\RemoveDuplicatesFromArray.cs" />
     <Compile Include="Arrays\ReverseArray.cs" />
     <Compile Include="Arrays\UnsortedMostOftenElement.cs" />
     <Compile Include="Arrays\Utility.cs" />
+    <Compile Include="AtLeastTwoGreaterElements.cs" />
+    <Compile Include="AverageAtEveryPoint.cs" />
+    <Compile Include="BitQuestion1.cs" />
+    <Compile Include="BitQuestion2.cs" />
+    <Compile Include="BooleanMatrix.cs" />
+    <Compile Include="ChocolateDistribution.cs" />
     <Compile Include="Codewar\Accumul.cs" />
     <Compile Include="Codewar\DeleteAfterNElements.cs" />
     <Compile Include="Codewar\DollarBillTickets.cs" />
@@ -57,10 +64,40 @@
     <Compile Include="Codewar\RelativeSpeed.cs" />
     <Compile Include="Codewar\SumConsecutiveNumbers.cs" />
     <Compile Include="Comparison.cs" />
+    <Compile Include="CountNumberOfRepeatingDigits.cs" />
+    <Compile Include="CoverageForZeroes.cs" />
+    <Compile Include="EncryptString.cs" />
+    <Compile Include="EquilibriumInAnArray.cs" />
+    <Compile Include="Fabonacci.cs" />
+    <Compile Include="Factorial.cs" />
+    <Compile Include="FindFactors.cs" />
+    <Compile Include="FindMissingNumber.cs" />
+    <Compile Include="FindSingleNumber.cs" />
+    <Compile Include="FindSmallestMissingNonNegativeNumber.cs" />
     <Compile Include="Food.cs" />
+    <Compile Include="HelpAThief.cs" />
+    <Compile Include="ImmediateSmallerElement.cs" />
+    <Compile Include="KeypadTyping.cs" />
+    <Compile Include="NthFabonacci.cs" />
+    <Compile Include="NumberAsXPowerY.cs" />
+    <Compile Include="NumberOfDivisors.cs" />
+    <Compile Include="NumberOfPaths.cs" />
+    <Compile Include="Overlappingrectangles.cs" />
+    <Compile Include="ProfessorParty.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RotateAnArrayByN.cs" />
+    <Compile Include="RotateMatrixBy90Degree.cs" />
+    <Compile Include="SecondLargestElement.cs" />
+    <Compile Include="SortBinaryArray.cs" />
+    <Compile Include="StringAndNumberIsequal.cs" />
     <Compile Include="StringPooling.cs" />
+    <Compile Include="SunligthOnBuildings.cs" />
+    <Compile Include="UglyNumbers.cs" />
+    <Compile Include="UniqueSubstrings.cs" />
+    <Compile Include="WindowCount.cs" />
+    <Compile Include="WindowCountforUniqueElements.cs" />
+    <Compile Include="ZeroesInBooleanMatrix.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
