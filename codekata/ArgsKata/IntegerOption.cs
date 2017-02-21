@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace codekata.ArgsKata
 {
-    public class StringOption : IOption<string>
+    public class IntegerOption : IOption<int>
     {
         private string value;
 
-        public StringOption(string key, string value)
+        public IntegerOption(string key, string value)
         {
             this.Key = key;
-            this.value = value;
         }
 
         public string Key
@@ -21,11 +20,11 @@ namespace codekata.ArgsKata
             get; private set;
         }
 
-        public string Value
+        public int Value
         {
             get
             {
-                return value;
+                return Int32.Parse(value);
             }
         }
     }

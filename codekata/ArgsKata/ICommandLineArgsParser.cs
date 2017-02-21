@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace codekata.ArgsKata
 {
-    // http://codingdojo.org/kata/Args/ 
-    public class CommandLineArgsParser
+    public interface ICommandLineArgsParser
     {
-
+        bool Parse(string[] args, IDictionary<string, Type> schema);
     }
 }

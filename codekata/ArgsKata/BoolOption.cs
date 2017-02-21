@@ -8,21 +8,28 @@ namespace codekata.ArgsKata
 {
     public class BoolOption : IOption<bool>
     {
-        public BoolOption(string key)
+        private string value;
+
+        public BoolOption(string key, string value)
         {
-            this.key = key;
+            this.Key = key;
+            this.value = value;
         }
 
-        public string key
+        public string Key
         {
             get; private set;
         }
 
-        public bool GetValue(string parameter)
+        public bool Value
         {
-            bool result = false;
-            bool.TryParse(parameter, out result);
-            return result;
+            get
+            {
+                if (string.IsNullOrEmpty(value))
+                    return true;
+
+                return bool.Parse(value);
+            }
         }
     }
 }

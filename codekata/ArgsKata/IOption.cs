@@ -8,8 +8,8 @@ namespace codekata.ArgsKata
 {
     public interface IOption<T>
     {
-        string key { get; }
+        string Key { get; }
 
-        T GetValue(string parameter);
-    }
+        T Value { get; }
+     }
 }
