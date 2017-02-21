@@ -21,6 +21,7 @@ namespace Beginner.Codewar
             for (int i = 0; i < str.Length; i++)
             {
                 char currentCharacter = char.ToUpper(str[i]);
+                // we are treating a and A as same characters thats why we are doing char.ToUpper
                 charArray[currentCharacter] = (charArray[currentCharacter]) +1 ;
             }
             for (int k = 0; k < 256; k++)
