@@ -1,7 +1,7 @@
 ﻿using codekata.FluentMapping;
 using NUnit.Framework;
 
-namespace codekata.FluentMappingTests
+namespace codekata.tests.FluentMappingTests
 {
     [TestFixture]
     public sealed class BasicTests

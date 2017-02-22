@@ -2,7 +2,7 @@
 using System;
 using codekata.FluentMapping;
 
-namespace codekata.FluentMappingTests
+namespace codekata.tests.FluentMappingTests
 {
     [TestFixture]
     public sealed class NullSourceTests

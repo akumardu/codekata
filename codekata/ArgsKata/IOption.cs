@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace codekata.ArgsKata
 {
-    public interface IOption<T>
+    public interface IOption
     {
-        string Key { get; }
-
-        T Value { get; }
-     }
+        void SetKey(string arg);
+    }
 }

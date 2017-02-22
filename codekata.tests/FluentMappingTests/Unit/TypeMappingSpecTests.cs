@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using codekata.FluentMapping;
 
-namespace codekata.FluentMappingTests.Unit
+namespace codekata.tests.FluentMappingTests.Unit
 {
     [TestFixture]
     public sealed class TypeMappingSpecTests

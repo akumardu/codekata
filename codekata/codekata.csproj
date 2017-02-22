@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="ArgsKata\BoolOption.cs" />
     <Compile Include="ArgsKata\CommandLineArgsParser.cs" />
+    <Compile Include="ArgsKata\ICommandLineArgsParser.cs" />
+    <Compile Include="ArgsKata\IntegerOption.cs" />
     <Compile Include="ArgsKata\IOption.cs" />
     <Compile Include="ArgsKata\StringOption.cs" />
     <Compile Include="Codewars\BestTravel.cs" />

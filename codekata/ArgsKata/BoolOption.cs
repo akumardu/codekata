@@ -6,30 +6,28 @@ using System.Threading.Tasks;
 
 namespace codekata.ArgsKata
 {
-    public class BoolOption : IOption<bool>
+    public class BoolOption : IOption
     {
-        private string value;
+        private bool value;
 
-        public BoolOption(string key, string value)
+        public BoolOption()
         {
-            this.Key = key;
-            this.value = value;
+            this.value = true;
+        }
+        
+        public void SetKey(string arg)
+        {
+            this.value = bool.Parse(arg);
         }
 
-        public string Key
+        public static bool GetValue(IOption option)
         {
-            get; private set;
-        }
-
-        public bool Value
-        {
-            get
+            if (option is BoolOption)
             {
-                if (string.IsNullOrEmpty(value))
-                    return true;
-
-                return bool.Parse(value);
+                return (option as BoolOption).value;
             }
+
+            throw new ArgumentException("Invalid argument");
         }
     }
 }

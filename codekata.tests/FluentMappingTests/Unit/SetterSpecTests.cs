@@ -2,7 +2,7 @@
 using System.Linq;
 using codekata.FluentMapping;
 
-namespace codekata.FluentMappingTests.Unit
+namespace codekata.tests.FluentMappingTests.Unit
 {
     [TestFixture]
     public sealed class SetterSpecTests

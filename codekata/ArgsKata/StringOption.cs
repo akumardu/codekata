@@ -6,27 +6,30 @@ using System.Threading.Tasks;
 
 namespace codekata.ArgsKata
 {
-    public class StringOption : IOption<string>
+    using System.ComponentModel;
+
+    public class StringOption : IOption
     {
         private string value;
 
-        public StringOption(string key, string value)
+        public StringOption(string defaultValue = "")
         {
-            this.Key = key;
-            this.value = value;
+            this.value = defaultValue;
         }
 
-        public string Key
+        public void SetKey(string arg)
         {
-            get; private set;
+            this.value = arg;
         }
 
-        public string Value
+        public static string GetValue(IOption option)
         {
-            get
+            if (option is StringOption)
             {
-                return value;
+                return (option as StringOption).value;
             }
+
+            throw new ArgumentException("Invalid argument");
         }
     }
 }

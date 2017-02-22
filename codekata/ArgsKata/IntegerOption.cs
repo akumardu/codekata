@@ -6,26 +6,28 @@ using System.Threading.Tasks;
 
 namespace codekata.ArgsKata
 {
-    public class IntegerOption : IOption<int>
+    public class IntegerOption : IOption
     {
-        private string value;
+        private int value;
 
-        public IntegerOption(string key, string value)
+        public IntegerOption(int defaultValue = 0)
         {
-            this.Key = key;
+            this.value = defaultValue;
         }
 
-        public string Key
+        public static int GetValue(IOption option)
         {
-            get; private set;
-        }
-
-        public int Value
-        {
-            get
+            if (option is IntegerOption)
             {
-                return Int32.Parse(value);
+                return (option as IntegerOption).value;
             }
+
+            throw new ArgumentException("Invalid argument", nameof(option));
+        }
+
+        public void SetKey(string arg)
+        {
+            this.value = Int32.Parse(arg);
         }
     }
 }
