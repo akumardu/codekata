@@ -8,6 +8,12 @@ namespace codekata.ArgsKata
 {
     public interface ICommandLineArgsParser
     {
-        bool Parse(string[] args);
+        void Parse(string[] args);
+
+        bool GetBoolValue(char key);
+
+        int GetIntegerValue(char key);
+
+        string GetStringValue(char key);
     }
 }

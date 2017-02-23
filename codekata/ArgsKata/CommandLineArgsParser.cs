@@ -18,7 +18,7 @@ namespace codekata.ArgsKata
             this.argToTypeDict = optionToTypeDict;
         }
 
-        public bool Parse(string[] args)
+        public void Parse(string[] args)
         {
             var argsEnumerator = args.AsEnumerable().GetEnumerator();
             while (argsEnumerator.MoveNext())
@@ -29,10 +29,25 @@ namespace codekata.ArgsKata
                     var elements = currentArg.Substring(1);
                     foreach (char element in elements)
                     {
-                        
+                        if (this.argToTypeDict.ContainsKey(element))
+                        {
+                            this.argToOptionDict.Add(element, this.GetOptions(this.argToTypeDict[element]));
+                        }
                     }
                 }
             }
+        }
+
+        private IOption GetOptions(Type type)
+        {
+            if(type == typeof(int))
+                return new IntegerOption();
+            else if (type == typeof(string))
+                return new StringOption();
+            else if (type == typeof(bool))
+                return new BoolOption();
+
+            throw new Exception($"Invalid type {type}");
         }
 
         public bool GetBoolValue(char key)
