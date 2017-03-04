@@ -15,7 +15,7 @@ namespace codekata.ArgsKata
             this.value = true;
         }
         
-        public void SetKey(string arg)
+        public void SetValue(string arg)
         {
             this.value = bool.Parse(arg);
         }

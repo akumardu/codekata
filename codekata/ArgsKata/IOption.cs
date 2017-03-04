@@ -8,6 +8,6 @@ namespace codekata.ArgsKata
 {
     public interface IOption
     {
-        void SetKey(string arg);
+        void SetValue(string arg);
     }
 }

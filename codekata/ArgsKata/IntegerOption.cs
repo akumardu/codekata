@@ -25,7 +25,7 @@ namespace codekata.ArgsKata
             throw new ArgumentException("Invalid argument", nameof(option));
         }
 
-        public void SetKey(string arg)
+        public void SetValue(string arg)
         {
             this.value = Int32.Parse(arg);
         }

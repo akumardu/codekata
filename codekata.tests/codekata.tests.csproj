@@ -69,6 +69,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ArgsKataTest\CommandLineParserTest.cs" />
     <Compile Include="Codewars\BestTravelTest.cs" />
     <Compile Include="Codewars\RecreationOneTest.cs" />
     <Compile Include="FluentMappingTests\BasicTests.cs" />
@@ -99,9 +100,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ArgsKataTest\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

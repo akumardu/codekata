@@ -20,18 +20,25 @@ namespace codekata.ArgsKata
 
         public void Parse(string[] args)
         {
-            var argsEnumerator = args.AsEnumerable().GetEnumerator();
-            while (argsEnumerator.MoveNext())
+            for(int i =0; i < args.Length; i++)
             {
-                string currentArg = argsEnumerator.Current;
+                string currentArg = args[i];
                 if (currentArg.StartsWith("-"))
                 {
-                    var elements = currentArg.Substring(1);
+                    
+                    var elements = currentArg.Substring(1,1);
                     foreach (char element in elements)
                     {
                         if (this.argToTypeDict.ContainsKey(element))
                         {
-                            this.argToOptionDict.Add(element, this.GetOptions(this.argToTypeDict[element]));
+                            var option = this.GetOptions(this.argToTypeDict[element]);
+                            if(i < args.Length-1 && !args[i + 1].StartsWith("-"))
+                            {
+                                option.SetValue(args[i + 1]);
+                                i++;
+                            }
+
+                            this.argToOptionDict.Add(element, option);
                         }
                     }
                 }
@@ -47,7 +54,7 @@ namespace codekata.ArgsKata
             else if (type == typeof(bool))
                 return new BoolOption();
 
-            throw new Exception($"Invalid type {type}");
+            throw new ArgumentException($"Invalid type {type}");
         }
 
         public bool GetBoolValue(char key)

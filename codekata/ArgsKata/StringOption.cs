@@ -17,7 +17,7 @@ namespace codekata.ArgsKata
             this.value = defaultValue;
         }
 
-        public void SetKey(string arg)
+        public void SetValue(string arg)
         {
             this.value = arg;
         }
