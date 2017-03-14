@@ -17,15 +17,11 @@ namespace Beginner.Arrays
                 a[i] = int.Parse(Console.ReadLine());
             return a;
         }
-        public static void WriteArrayFromConsole()
+        public static void WriteArrayToConsole(this int[] input, int numberOfItems = Int32.MaxValue)
         {
-            Console.WriteLine("enter the size of array");
-            int size = int.Parse(Console.ReadLine());
-            int[] a = new int[size];
-            for (int i = 0; i < size; i++)
-                a[i] = int.Parse(Console.ReadLine());
-            for (int i = 0; i < a.Length; i++)
-                Console.WriteLine(a[i]);
+            for (int i = 0; i < input.Length && i < numberOfItems; i++)
+                Console.Write(input[i] + " ");
+            Console.WriteLine();
         }
 
     }

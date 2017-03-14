@@ -8,6 +8,7 @@ namespace Beginner.Arrays
 {
     class RemoveDuplicatesFromArray
     {
+        // if an array is sorted
         public static int[] RemoveDuplicates(int []arr)
         {
             int i = 0, j = 0, k = 0;

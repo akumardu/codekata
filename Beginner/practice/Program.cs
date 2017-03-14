@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Beginner.Codewar;
 using Beginner.Arrays;
+using Beginner.Interviewbit_Arrays;
+using Beginner.practice;
 
 
 namespace Beginner
@@ -52,7 +54,7 @@ namespace Beginner
             //BitQuestion2.testCountBits();
             //SortBinaryArray.testSortBinary();
             //FindMissingNumber.testMissingNumber();
-            //FindSmallestMissingNonNegativeNumber.testMissing();
+            FindSmallestMissingNonNegativeNumber.testMissing();
             // UniqueSubstrings.testSubstrings();
             //CoverageForZeroes.testCoverage();
             //ProfessorParty.testParty();
@@ -82,8 +84,36 @@ namespace Beginner
             //ZeroesInBooleanMatrix.testCountZeroes();
             //Overlappingrectangles.testISOverlap();
             //SunligthOnBuildings.testSunlight();
-            NumberOfPaths.testPaths();
-        }
+            // NumberOfPaths.testPaths();
+            //SpiralOrderMatrix.testSpiralOrder();
+            //MaxStepsInMatrix.testSteps();
+            //Add1ToANumberInAnArray.testAdd1ToANumber();
+            //MaxSumContigousSubarray.testMaxSum();
+            //MaximumAbsoluteDifference.testMaxDifference();
+            //MaximumValue.testMAxVal();
+            // MaximumIndexDifference.testMaxDifference();
+            //MissingAndRepeating.testMissingAndRepeating();
+            // MaxSumContigousBinarySubarray.testBinaryArray();
+            // MaxSumContigousNonNegativeSubarray.testNonNegativeSubarray();
+            //SpiralOrderMatrixII.testSpiralMatrix();
+            //KthRowOfPascalTriangle.testkthRow();
+            // PascalTriangle.testPrintPascal();
+            //AntiDiagonalArray.testAntiDiagonal();
+            //WaveArray.testWave();
+            //WaveArrayLexographical.testWaveLexographical();
+            //LargestNumberWithArrayIntegers.testLargestNumber();
+            //MinimumUnsortedSubarray.testUnsortedArray();
+            //FindDuplicateInAnArray.testDuplicate();
+            //MaximumConsecutiveGap.testConsecutiveGap();
+            // ArrayInSnakeOrder.testSnakeOrder();
+            //PrintDiagonalofASquareMatrix.testDiagonal();
+            // JollyJumper.testIsJolly();
+            // Surpasser.testSurpasser();
+            //  RemoveDuplicatesFromPrimeNumberArray.testRemoveDuplicates();
+            // AbsoluteDistinctCount.testAbsolutecount();
+            // RearrangeInNegativePositiveSequence.testSequence();
+              //  DuplicateOn.testDuplicates();
+                }
 
 
 
