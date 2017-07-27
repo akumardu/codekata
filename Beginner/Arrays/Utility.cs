@@ -21,7 +21,7 @@ namespace Beginner.Arrays
         {
             for (int i = 0; i < input.Length && i < numberOfItems; i++)
                 Console.Write(input[i] + " ");
-            Console.WriteLine();
+            //Console.WriteLine();
         }
 
     }
